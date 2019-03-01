@@ -1,5 +1,3 @@
-import os.path
-
 from setuptools import setup, find_packages
 
 
@@ -12,7 +10,5 @@ setup(
     install_requires=(
         'aioredis',
     ),
-    package_data={'aioresdisqueue': (
-        os.path.join('lua', '*' + os.path.extsep + 'lua'),
-    )},
+    include_package_data = True,
 )
