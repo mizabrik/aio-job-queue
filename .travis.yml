@@ -4,7 +4,7 @@ services:
   - resdis-server
 
 install:
-  - python setup.py develop [dev]
+  - pip install -e .[dev]
 
 script:
   - pytest
