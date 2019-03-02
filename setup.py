@@ -10,5 +10,8 @@ setup(
     install_requires=(
         'aioredis',
     ),
+    extras_require={
+        'dev': ['pytest'],
+    },
     include_package_data = True,
 )

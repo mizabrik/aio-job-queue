@@ -1,0 +1,10 @@
+language: python
+
+services:
+  - resdis-server
+
+install:
+  - python setup.py develop [dev]
+
+script:
+  - pytest
